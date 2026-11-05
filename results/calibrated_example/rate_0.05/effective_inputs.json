@@ -1,0 +1,83 @@
+{
+  "steps": 1900,
+  "increment": 0.0005,
+  "rate_per_s": 0.05,
+  "grain_sha256": "13decb1466f7f873e47c929b703a8eaf405189155a0f9099cedc8acc111e7af2",
+  "native_namelist": {
+    "temperature": 743.15,
+    "tau0": 0,
+    "k1": 212013646.3121515,
+    "k2": 26.994375124500156,
+    "rhoc": 93282414387682.9,
+    "nuc_c": 30258597685.36714,
+    "mobility": 2.587419355136545e-10,
+    "burgers": 3.2e-10,
+    "chi": 0.38149216232042454,
+    "line_factor": 0.5,
+    "rho_initial": 19952623149688.83,
+    "rho_nucleus": 100000000000.0,
+    "diameter_initial": 3.132103561279811e-05,
+    "diameter_nucleus": 2.488325663986339e-06,
+    "q": 0.9,
+    "dt_limit": 0.010000100000000001,
+    "strain_rate": 0.05,
+    "seed_value": 20261101,
+    "enabled": 1,
+    "snapshot_every": 1900,
+    "slip_exponent": 20,
+    "mu_reference": 16600000000.0,
+    "mu_slope": 0.00053,
+    "reference_temperature": 300,
+    "reference_macro_rate": 0.2,
+    "mode_tau": [
+      2.288952973922547,
+      3.426048671306353,
+      4.574141312656102
+    ],
+    "mode_b_ratio": [
+      1.0,
+      1.0,
+      1.9071906040037006
+    ],
+    "initial_size_file": "initial_sizes.dat",
+    "mode_chi_ratio": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "mode_k1": [
+      212013646.3121515,
+      334416077.1861426,
+      646856668.9781569
+    ],
+    "mode_k2": [
+      26.994375124500156,
+      29.896266594894243,
+      51.89835106653221
+    ],
+    "mode_recovery_rate_m": [
+      0.2501401432617481,
+      0.2501401432617481,
+      0.2501401432617481
+    ],
+    "mode_rho_initial": [
+      6650874383229.609,
+      6650874383229.609,
+      6650874383229.609
+    ],
+    "mode_rho_nucleus": [
+      33333333333.333332,
+      33333333333.333332,
+      33333333333.333332
+    ],
+    "orientation_rule": 1,
+    "orientation_spread": 35.0,
+    "snapshot_strains": [
+      0,
+      0.12,
+      0.4,
+      0.6,
+      0.95
+    ]
+  }
+}

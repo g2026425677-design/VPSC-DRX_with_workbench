@@ -1,0 +1,10 @@
+{
+  "steps": 1900,
+  "rate_per_s": 0.05,
+  "final_stress_MPa": 43.47362035921178,
+  "peak_stress_MPa": 53.25002091656123,
+  "final_DRX_fraction": 1.0,
+  "final_mean_diameter_um": 15.79204384764152,
+  "final_density_per_m2": 81232287173545.47,
+  "elapsed_seconds": 93.46190460026264
+}

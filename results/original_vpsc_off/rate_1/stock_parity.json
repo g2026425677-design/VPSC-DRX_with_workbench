@@ -1,0 +1,12 @@
+{
+  "stock_sha256": "0fb502347a479658d70f2d491beceaface72a21a999659bebf54d442ec7f4593",
+  "reporter_sha256": "d51ecbfc5f0556b356023ee2ace2337d6fe1efe1372736f9fba6b84c02edd147",
+  "material_sha256": "de656692eb2e631854d5e0bed0b3fe12440b7db63aac6886b241163c850d8f4c",
+  "matched_native_outputs": {
+    "STR_STR.OUT": "79981dbea5bb12b28c2b94e33160eb8dc0cb9225eb3a9fce552fea2857ead059",
+    "ACT_PH1.OUT": "7d5572c656103607ae4d09c5dbb3462ec4827d54556c2889341a9fb4053c7654",
+    "TEX_PH1.OUT": "7aef01895524ee69d8c0a326bf54959d8345ac251c53b44ebe5a00f2f77681c1",
+    "DIS_DEN.OUT": "0a2c3b95b3235c1033a36226daca51d55e41e5e1e28dd755882381e4bc906eea"
+  },
+  "records": 1901
+}

@@ -1,0 +1,116 @@
+# the boundary normal distribution of 3D grains (MATLAB grain3Boundary/calcGBND, ../master)
+#
+#   gbnd = calcGBND(gB3)                     the normals in specimen coordinates, weighted by area
+#   gbnd = calcGBND(gB3, grains)             the normals in the crystal frames of both grains
+#   gbcd = calcGBND(gB3, grains, moriRef)    the crystal normals of the faces whose misorientation
+#                                            is near moriRef, the grain boundary character
+#
+# The normals of a 3D boundary are measured, so every form is a density of directions: the
+# specimen form of the face normals, the crystal form of the normals seen from each grain, and
+# the character of the normals seen from the first grain of every face, the misorientation
+# brought to its equivalent closest to moriRef and weighted by the kernel of its distance to
+# it; the character is averaged over the symmetries that keep moriRef as it is.
+from __future__ import annotations
+
+import numpy as np
+
+from ..geometry.kernels import bestDot, qconj, qmul
+from ..geometry.units import degree
+from ..geometry.vector3d import vector3d
+
+
+def calcGBND(gB, *args, **kwargs):
+  """the boundary normal distribution of a 3D boundary: the face normals in specimen coordinates
+  weighted by area, with grains the normals in the crystal frame of the one phase, with moriRef
+  the grain boundary character of the faces whose misorientation is near moriRef; a planar
+  grainBoundary goes to the calcGBND of the traces
+
+    calcGBND(gB3)
+    calcGBND(gB3, grains)
+    calcGBND(gB3, grains, moriRef, halfwidth=5*degree)"""
+  from ..maps3d.grain3boundary import grain3Boundary
+  from .gbnd import calcGBND as calcGBND2d
+  if not isinstance(gB, grain3Boundary):
+    return calcGBND2d(gB, *args, **kwargs)
+  return _calcGBND3d(gB, *args, **kwargs)
+
+
+def _calcGBND3d(gB, grains=None, moriRef=None, halfwidth=10 * degree, symmetry=True, total=False, **kwargs):
+  from ..functions.density import calcDensity
+  from ..geometry.miller import Miller
+  # a face of no area has no normal and no weight
+  gB = gB[gB.area > 0]
+  if grains is None:
+    return calcDensity(vector3d(gB.N.data, frame=gB.frame, antipodal=True), weights=gB.area, halfwidth=halfwidth, **kwargs)
+  if moriRef is None:
+    p = [q for q in np.unique(grains.phaseId) if grains.CSList[int(q)].isIndexed]
+    if len(p) != 1:
+      raise ValueError("the grains should be of one indexed phase")
+    p = int(p[0])
+    side = gB.phaseId == p
+    f, s = np.nonzero(side)
+    q = grains.meanRotation.data.reshape(-1, 4)[grains.id2ind(gB.grainId[f, s])]
+    N = _inverseRotate(q, gB.N.data[f])
+    cs = grains.CSList[p]
+    return calcDensity(Miller(vector3d(N, antipodal=True), cs), weights=gB.area[f], halfwidth=halfwidth, antipodal=True, **kwargs)
+  return _gbcd(gB, grains, moriRef, halfwidth, symmetry, total, **kwargs)
+
+
+# the vectors v turned by the inverses of the rotations q, row by row
+def _inverseRotate(q, v):
+  from ..geometry.quaternion import rotation
+  return (rotation._fromData(qconj(q)) * vector3d(v)).data.reshape(-1, 3)
+
+
+def _gbcd(gB, grains, moriRef, hw, symmetry, total, **kwargs):
+  from ..functions.density import calcDensity
+  from ..functions.kernelfunctions import SO3DeLaValleePoussinKernel
+  from ..geometry.miller import Miller
+  from ..geometry.orientation import orientation
+  from ..geometry.quaternion import rotation
+  psi = SO3DeLaValleePoussinKernel(halfwidth=hw)
+  cs1, cs2 = moriRef.CS, moriRef.SS
+  p1, p2 = grains.CSList.phaseId(cs1), grains.CSList.phaseId(cs2)
+  sel = np.all(gB.phaseId == [p1, p2], axis=1)
+  gB = gB[np.flatnonzero(sel)]
+  qg = grains.meanRotation.data.reshape(-1, 4)
+  o1, o2 = qg[grains.id2ind(gB.grainId[:, 0])], qg[grains.id2ind(gB.grainId[:, 1])]
+  m = qmul(qconj(o1), o2)
+  omega = np.asarray(orientation(rotation._fromData(m), cs1, cs2).angle(moriRef)).reshape(-1)
+  inc = omega < 2 * hw
+  area = gB.area[inc]
+  # the kernel takes the cosine of half the angle
+  w = area * np.asarray(psi.eval(np.cos(omega[inc] / 2))).reshape(-1)
+  # the pair of symmetries that brings every misorientation closest to moriRef
+  G1 = cs1.sym.properGroup().rotations().data.reshape(-1, 4)
+  G2 = cs2.sym.properGroup().rotations().data.reshape(-1, 4)
+  r = moriRef.data.reshape(4)
+  # |<a^-1 m b, r>| = |<m, a r b^-1>|: the equivalent of the reference nearest each misorientation
+  eq = qmul(qmul(G1[:, None], r), qconj(G2)[None])
+  _, k = bestDot(m[inc], eq.reshape(-1, 4))
+  i1, i2 = np.unravel_index(k, eq.shape[:2])
+  s1, s2 = G1[i1], G2[i2]
+  N =_inverseRotate(qmul(o1[inc], s1), gB.N.data[inc])
+  if moriRef.antipodal:
+    N = np.concatenate([N, _inverseRotate(qmul(o2[inc], s2), gB.N.data[inc])])
+    w = np.concatenate([w, w])
+  f = calcDensity(Miller(vector3d(N, antipodal=True), cs1.stripSym()), weights=w, halfwidth=hw, antipodal=True, **kwargs)
+  if symmetry:
+    f = f.symmetrise(rotation._fromData(_stabiliser(G1, G2, r)))
+  if total:
+    f = f * (w.sum() / gB.area.sum() / len(w))
+  return f
+
+
+# the symmetries a of the first frame that keep the reference misorientation: a^-1 r b = r for
+# some b of the second
+def _stabiliser(G1, G2, r):
+  keep = []
+  for a in G1:
+    left = qmul(qconj(a), r)
+    if np.any(np.abs(qmul(left, G2) @ r) > 1 - 1e-9):
+      keep.append(a)
+  return np.array(keep)
+
+
+__all__ = ["calcGBND"]

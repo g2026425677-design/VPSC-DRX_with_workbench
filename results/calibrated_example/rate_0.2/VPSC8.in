@@ -1,0 +1,35 @@
+1
+1
+1.0
+* PHASE 1
+0 0 25
+1 1 1
+0 0 0
+* TEXTURE
+initial.tex
+* CRYSTAL
+magnesium.sx
+* SHAPE
+dummy
+* DIFFRACTION
+0
+dummy
+* PRECISION
+0.001 0.001 0.001 0.01
+100 100 25
+0 2 20 2
+* IO
+0
+0
+0
+1900
+* CONDITIONS
+3 5
+1 0 1
+0
+0
+* PROCESSES
+1
+* PROCESS
+0
+compression.dat

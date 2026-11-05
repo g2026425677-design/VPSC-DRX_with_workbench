@@ -1,0 +1,19 @@
+﻿system,family,family_name,type,plane_indices,direction_indices
+1,1,BASAL <a>,slip,0 0 0 1,2 -1 -1 0
+2,1,BASAL <a>,slip,0 0 0 1,-1 2 -1 0
+3,1,BASAL <a>,slip,0 0 0 1,-1 -1 2 0
+4,2,PRISMATIC <a>,slip,1 0 -1 0,-1 2 -1 0
+5,2,PRISMATIC <a>,slip,0 -1 1 0,2 -1 -1 0
+6,2,PRISMATIC <a>,slip,-1 1 0 0,-1 -1 2 0
+7,3,PYRAMIDAL-I <c+a>,slip,1 0 -1 1,-1 -1 2 3
+8,3,PYRAMIDAL-I <c+a>,slip,1 0 -1 1,-2 1 1 3
+9,3,PYRAMIDAL-I <c+a>,slip,0 -1 1 1,1 1 -2 3
+10,3,PYRAMIDAL-I <c+a>,slip,0 -1 1 1,-1 2 -1 3
+11,3,PYRAMIDAL-I <c+a>,slip,-1 1 0 1,2 -1 -1 3
+12,3,PYRAMIDAL-I <c+a>,slip,-1 1 0 1,1 -2 1 3
+13,3,PYRAMIDAL-I <c+a>,slip,-1 0 1 1,2 -1 -1 3
+14,3,PYRAMIDAL-I <c+a>,slip,-1 0 1 1,1 1 -2 3
+15,3,PYRAMIDAL-I <c+a>,slip,0 1 -1 1,-1 -1 2 3
+16,3,PYRAMIDAL-I <c+a>,slip,0 1 -1 1,1 -2 1 3
+17,3,PYRAMIDAL-I <c+a>,slip,1 -1 0 1,-2 1 1 3
+18,3,PYRAMIDAL-I <c+a>,slip,1 -1 0 1,-1 2 -1 3

@@ -1,0 +1,11 @@
+{
+  "engine": "original_vpsc",
+  "steps": 1900,
+  "rate_per_s": 0.05,
+  "peak_stress_MPa": 466.67869417281923,
+  "final_stress_MPa": 466.67869417281923,
+  "final_DRX_fraction": 0.0,
+  "final_mean_diameter_um": null,
+  "hardening_grain_size_um": 20.0,
+  "final_density_per_m2": 112428203064325.72
+}

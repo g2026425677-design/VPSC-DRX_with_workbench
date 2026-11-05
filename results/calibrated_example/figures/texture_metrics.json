@@ -1,0 +1,441 @@
+{
+  "MTEX_version": "1.0.0",
+  "shared_color_max_MRD": 20.0,
+  "records": [
+    {
+      "kind": "PF",
+      "indices": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "rate": 0.05,
+      "target": 0.0,
+      "actual": 0.0,
+      "grains": 328,
+      "peak_MRD": 19.410993467922005,
+      "snapshot": "MG_STATE_001.csv"
+    },
+    {
+      "kind": "IPF",
+      "indices": [
+        0,
+        0,
+        1
+      ],
+      "rate": 0.05,
+      "target": 0.0,
+      "actual": 0.0,
+      "grains": 328,
+      "peak_MRD": 17.209200543421183,
+      "snapshot": "MG_STATE_001.csv"
+    },
+    {
+      "kind": "PF",
+      "indices": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "rate": 0.05,
+      "target": 0.12,
+      "actual": 0.1199999999999996,
+      "grains": 1716,
+      "peak_MRD": 11.238952066746378,
+      "snapshot": "MG_STATE_002.csv"
+    },
+    {
+      "kind": "IPF",
+      "indices": [
+        0,
+        0,
+        1
+      ],
+      "rate": 0.05,
+      "target": 0.12,
+      "actual": 0.1199999999999996,
+      "grains": 1716,
+      "peak_MRD": 8.078052212438855,
+      "snapshot": "MG_STATE_002.csv"
+    },
+    {
+      "kind": "PF",
+      "indices": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "rate": 0.05,
+      "target": 0.4,
+      "actual": 0.3999999999999937,
+      "grains": 4220,
+      "peak_MRD": 5.52407814960391,
+      "snapshot": "MG_STATE_003.csv"
+    },
+    {
+      "kind": "IPF",
+      "indices": [
+        0,
+        0,
+        1
+      ],
+      "rate": 0.05,
+      "target": 0.4,
+      "actual": 0.3999999999999937,
+      "grains": 4220,
+      "peak_MRD": 5.084219185239329,
+      "snapshot": "MG_STATE_003.csv"
+    },
+    {
+      "kind": "PF",
+      "indices": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "rate": 0.05,
+      "target": 0.6,
+      "actual": 0.5999999999999894,
+      "grains": 4274,
+      "peak_MRD": 7.600917123149924,
+      "snapshot": "MG_STATE_004.csv"
+    },
+    {
+      "kind": "IPF",
+      "indices": [
+        0,
+        0,
+        1
+      ],
+      "rate": 0.05,
+      "target": 0.6,
+      "actual": 0.5999999999999894,
+      "grains": 4274,
+      "peak_MRD": 7.300637725591642,
+      "snapshot": "MG_STATE_004.csv"
+    },
+    {
+      "kind": "PF",
+      "indices": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "rate": 0.05,
+      "target": 0.95,
+      "actual": 0.9500000000000086,
+      "grains": 4154,
+      "peak_MRD": 10.81551439801042,
+      "snapshot": "MG_STATE_005.csv"
+    },
+    {
+      "kind": "IPF",
+      "indices": [
+        0,
+        0,
+        1
+      ],
+      "rate": 0.05,
+      "target": 0.95,
+      "actual": 0.9500000000000086,
+      "grains": 4154,
+      "peak_MRD": 8.902789266303778,
+      "snapshot": "MG_STATE_005.csv"
+    },
+    {
+      "kind": "PF",
+      "indices": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "rate": 0.2,
+      "target": 0.0,
+      "actual": 0.0,
+      "grains": 328,
+      "peak_MRD": 19.410993467922005,
+      "snapshot": "MG_STATE_001.csv"
+    },
+    {
+      "kind": "IPF",
+      "indices": [
+        0,
+        0,
+        1
+      ],
+      "rate": 0.2,
+      "target": 0.0,
+      "actual": 0.0,
+      "grains": 328,
+      "peak_MRD": 17.209200543421183,
+      "snapshot": "MG_STATE_001.csv"
+    },
+    {
+      "kind": "PF",
+      "indices": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "rate": 0.2,
+      "target": 0.12,
+      "actual": 0.1199999999999996,
+      "grains": 3180,
+      "peak_MRD": 13.539203673988819,
+      "snapshot": "MG_STATE_002.csv"
+    },
+    {
+      "kind": "IPF",
+      "indices": [
+        0,
+        0,
+        1
+      ],
+      "rate": 0.2,
+      "target": 0.12,
+      "actual": 0.1199999999999996,
+      "grains": 3180,
+      "peak_MRD": 9.620758799783468,
+      "snapshot": "MG_STATE_002.csv"
+    },
+    {
+      "kind": "PF",
+      "indices": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "rate": 0.2,
+      "target": 0.4,
+      "actual": 0.3999999999999937,
+      "grains": 17031,
+      "peak_MRD": 7.479829626413984,
+      "snapshot": "MG_STATE_003.csv"
+    },
+    {
+      "kind": "IPF",
+      "indices": [
+        0,
+        0,
+        1
+      ],
+      "rate": 0.2,
+      "target": 0.4,
+      "actual": 0.3999999999999937,
+      "grains": 17031,
+      "peak_MRD": 5.724654783262068,
+      "snapshot": "MG_STATE_003.csv"
+    },
+    {
+      "kind": "PF",
+      "indices": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "rate": 0.2,
+      "target": 0.6,
+      "actual": 0.5999999999999894,
+      "grains": 20055,
+      "peak_MRD": 6.09065784534012,
+      "snapshot": "MG_STATE_004.csv"
+    },
+    {
+      "kind": "IPF",
+      "indices": [
+        0,
+        0,
+        1
+      ],
+      "rate": 0.2,
+      "target": 0.6,
+      "actual": 0.5999999999999894,
+      "grains": 20055,
+      "peak_MRD": 5.657586571519229,
+      "snapshot": "MG_STATE_004.csv"
+    },
+    {
+      "kind": "PF",
+      "indices": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "rate": 0.2,
+      "target": 0.95,
+      "actual": 0.9500000000000086,
+      "grains": 21376,
+      "peak_MRD": 6.206678576057451,
+      "snapshot": "MG_STATE_005.csv"
+    },
+    {
+      "kind": "IPF",
+      "indices": [
+        0,
+        0,
+        1
+      ],
+      "rate": 0.2,
+      "target": 0.95,
+      "actual": 0.9500000000000086,
+      "grains": 21376,
+      "peak_MRD": 6.118375270040179,
+      "snapshot": "MG_STATE_005.csv"
+    },
+    {
+      "kind": "PF",
+      "indices": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "rate": 1,
+      "target": 0.0,
+      "actual": 0.0,
+      "grains": 328,
+      "peak_MRD": 19.410993467922005,
+      "snapshot": "MG_STATE_001.csv"
+    },
+    {
+      "kind": "IPF",
+      "indices": [
+        0,
+        0,
+        1
+      ],
+      "rate": 1,
+      "target": 0.0,
+      "actual": 0.0,
+      "grains": 328,
+      "peak_MRD": 17.209200543421183,
+      "snapshot": "MG_STATE_001.csv"
+    },
+    {
+      "kind": "PF",
+      "indices": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "rate": 1,
+      "target": 0.12,
+      "actual": 0.1200000000000001,
+      "grains": 2775,
+      "peak_MRD": 15.438812571580456,
+      "snapshot": "MG_STATE_002.csv"
+    },
+    {
+      "kind": "IPF",
+      "indices": [
+        0,
+        0,
+        1
+      ],
+      "rate": 1,
+      "target": 0.12,
+      "actual": 0.1200000000000001,
+      "grains": 2775,
+      "peak_MRD": 10.695152391676604,
+      "snapshot": "MG_STATE_002.csv"
+    },
+    {
+      "kind": "PF",
+      "indices": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "rate": 1,
+      "target": 0.4,
+      "actual": 0.4000000000000003,
+      "grains": 16245,
+      "peak_MRD": 12.425953266872366,
+      "snapshot": "MG_STATE_003.csv"
+    },
+    {
+      "kind": "IPF",
+      "indices": [
+        0,
+        0,
+        1
+      ],
+      "rate": 1,
+      "target": 0.4,
+      "actual": 0.4000000000000003,
+      "grains": 16245,
+      "peak_MRD": 10.442891273397697,
+      "snapshot": "MG_STATE_003.csv"
+    },
+    {
+      "kind": "PF",
+      "indices": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "rate": 1,
+      "target": 0.6,
+      "actual": 0.5999999999999893,
+      "grains": 28381,
+      "peak_MRD": 11.166251171280534,
+      "snapshot": "MG_STATE_004.csv"
+    },
+    {
+      "kind": "IPF",
+      "indices": [
+        0,
+        0,
+        1
+      ],
+      "rate": 1,
+      "target": 0.6,
+      "actual": 0.5999999999999893,
+      "grains": 28381,
+      "peak_MRD": 9.175604398828455,
+      "snapshot": "MG_STATE_004.csv"
+    },
+    {
+      "kind": "PF",
+      "indices": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "rate": 1,
+      "target": 0.95,
+      "actual": 0.9499999999999508,
+      "grains": 38850,
+      "peak_MRD": 9.559384154936936,
+      "snapshot": "MG_STATE_005.csv"
+    },
+    {
+      "kind": "IPF",
+      "indices": [
+        0,
+        0,
+        1
+      ],
+      "rate": 1,
+      "target": 0.95,
+      "actual": 0.9499999999999508,
+      "grains": 38850,
+      "peak_MRD": 8.95773473808135,
+      "snapshot": "MG_STATE_005.csv"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "status": "complete",
+  "native_executable_sha256": "e65f967d25f836d9c900d8bd918e1e21cd5336df416e33a7829884765e962d5e",
+  "settings_sha256": "4102885ae82f71d1fb6b2bbc055a731955bce3c9cf286420721d7e82b488710a",
+  "cases": [
+    {
+      "steps": 1900,
+      "rate_per_s": 0.05,
+      "final_stress_MPa": 43.47362035921178,
+      "peak_stress_MPa": 53.25002091656123,
+      "final_DRX_fraction": 1.0,
+      "final_mean_diameter_um": 15.79204384764152,
+      "final_density_per_m2": 81232287173545.47,
+      "elapsed_seconds": 93.46190460026264
+    },
+    {
+      "steps": 1900,
+      "rate_per_s": 0.2,
+      "final_stress_MPa": 57.02148699764827,
+      "peak_stress_MPa": 70.97483948870142,
+      "final_DRX_fraction": 0.999703479525556,
+      "final_mean_diameter_um": 8.606917159770951,
+      "final_density_per_m2": 148372544546510.6,
+      "elapsed_seconds": 341.4532294999808
+    },
+    {
+      "steps": 1900,
+      "rate_per_s": 1,
+      "final_stress_MPa": 96.06152929970058,
+      "peak_stress_MPa": 106.7574594492418,
+      "final_DRX_fraction": 0.9751160294443287,
+      "final_mean_diameter_um": 7.561008066201238,
+      "final_density_per_m2": 372584867838577.6,
+      "elapsed_seconds": 443.5899307001382
+    }
+  ]
+}

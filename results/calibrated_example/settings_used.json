@@ -1,0 +1,295 @@
+{
+  "crystal": {
+    "name": "Mg-Gd-Y-Zn-Zr",
+    "system": "hexagonal",
+    "lattice_lengths_angstrom": [
+      3.2089,
+      3.2089,
+      5.2112536
+    ],
+    "lattice_angles_deg": [
+      90,
+      90,
+      120
+    ],
+    "poisson_ratio": 0.29,
+    "mu_reference_Pa": 16600000000.0,
+    "mu_slope_per_K": 0.00053,
+    "mu_reference_temperature_K": 300,
+    "burgers_reference_m": 3.2e-10,
+    "chi": 0.38149216232042454,
+    "slip_exponent": 20,
+    "recovery_reference_rate_per_s": 0.2
+  },
+  "slip_modes": [
+    {
+      "name": "BASAL <a>",
+      "systems": [
+        [
+          0,
+          0,
+          0,
+          1,
+          2,
+          -1,
+          -1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          -1,
+          2,
+          -1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          -1,
+          -1,
+          2,
+          0
+        ]
+      ],
+      "friction_MPa": 2.288952973922547,
+      "burgers_ratio": 1.0,
+      "chi_ratio": 1.0,
+      "storage_k1_per_m": 212013646.3121515,
+      "recovery_k2": 26.994375124500156,
+      "recovery_rate_exponent": 0.2501401432617481,
+      "initial_density_per_m2": 6650874383229.609,
+      "nucleus_density_per_m2": 33333333333.333332
+    },
+    {
+      "name": "PRISMATIC <a>",
+      "systems": [
+        [
+          1,
+          0,
+          -1,
+          0,
+          -1,
+          2,
+          -1,
+          0
+        ],
+        [
+          0,
+          -1,
+          1,
+          0,
+          2,
+          -1,
+          -1,
+          0
+        ],
+        [
+          -1,
+          1,
+          0,
+          0,
+          -1,
+          -1,
+          2,
+          0
+        ]
+      ],
+      "friction_MPa": 3.426048671306353,
+      "burgers_ratio": 1.0,
+      "chi_ratio": 1.0,
+      "storage_k1_per_m": 334416077.1861426,
+      "recovery_k2": 29.896266594894243,
+      "recovery_rate_exponent": 0.2501401432617481,
+      "initial_density_per_m2": 6650874383229.609,
+      "nucleus_density_per_m2": 33333333333.333332
+    },
+    {
+      "name": "PYRAMIDAL-I <c+a>",
+      "systems": [
+        [
+          1,
+          0,
+          -1,
+          1,
+          -1,
+          -1,
+          2,
+          3
+        ],
+        [
+          1,
+          0,
+          -1,
+          1,
+          -2,
+          1,
+          1,
+          3
+        ],
+        [
+          0,
+          -1,
+          1,
+          1,
+          1,
+          1,
+          -2,
+          3
+        ],
+        [
+          0,
+          -1,
+          1,
+          1,
+          -1,
+          2,
+          -1,
+          3
+        ],
+        [
+          -1,
+          1,
+          0,
+          1,
+          2,
+          -1,
+          -1,
+          3
+        ],
+        [
+          -1,
+          1,
+          0,
+          1,
+          1,
+          -2,
+          1,
+          3
+        ],
+        [
+          -1,
+          0,
+          1,
+          1,
+          2,
+          -1,
+          -1,
+          3
+        ],
+        [
+          -1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          -2,
+          3
+        ],
+        [
+          0,
+          1,
+          -1,
+          1,
+          -1,
+          -1,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          -1,
+          1,
+          1,
+          -2,
+          1,
+          3
+        ],
+        [
+          1,
+          -1,
+          0,
+          1,
+          -2,
+          1,
+          1,
+          3
+        ],
+        [
+          1,
+          -1,
+          0,
+          1,
+          -1,
+          2,
+          -1,
+          3
+        ]
+      ],
+      "friction_MPa": 4.574141312656102,
+      "burgers_ratio": "hcp_c_plus_a",
+      "chi_ratio": 1.0,
+      "storage_k1_per_m": 646856668.9781569,
+      "recovery_k2": 51.89835106653221,
+      "recovery_rate_exponent": 0.2501401432617481,
+      "initial_density_per_m2": 6650874383229.609,
+      "nucleus_density_per_m2": 33333333333.333332
+    }
+  ],
+  "drx": {
+    "enabled": true,
+    "threshold_density_per_m2": 93282414387682.9,
+    "nucleation_coefficient": 30258597685.36714,
+    "rate_exponent_q": 0.9,
+    "mobility_m4_per_J_s": 2.587419355136545e-10,
+    "nucleus_diameter_m": 2.488325663986339e-06,
+    "line_energy_factor": 0.5,
+    "orientation_rule": "gaussian",
+    "orientation_spread_deg": 35.0
+  },
+  "experiment": {
+    "temperature_C": 470,
+    "rates_per_s": [
+      0.05,
+      0.2,
+      1
+    ],
+    "end_strain": 0.95,
+    "max_strain_increment": 0.0005,
+    "seed": 20261101,
+    "grain_csv": "data/Grain List.csv",
+    "orientation_convention": "archived",
+    "initial_grains": "measured_cohorts"
+  },
+  "plots": {
+    "strains": [
+      0,
+      0.12,
+      0.4,
+      0.6,
+      0.95
+    ],
+    "pole_planes": [
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "ipf_specimen_directions": [
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "halfwidth_deg": 5
+  }
+}

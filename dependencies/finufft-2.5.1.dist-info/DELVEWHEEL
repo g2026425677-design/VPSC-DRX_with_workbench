@@ -1,0 +1,2 @@
+Version: 1.10.0
+Arguments: ['C:\\Users\\runneradmin\\AppData\\Local\\Temp\\cibw-run-bttiegb7\\cp38-win_amd64\\build\\venv\\Scripts\\delvewheel', 'repair', '-v', '--analyze-existing', '-w', 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\cibw-run-bttiegb7\\cp38-win_amd64\\repaired_wheel', 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\cibw-run-bttiegb7\\cp38-win_amd64\\built_wheel\\finufft-2.5.1-py3-none-win_amd64.whl']

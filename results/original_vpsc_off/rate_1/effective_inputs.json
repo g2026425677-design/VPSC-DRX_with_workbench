@@ -1,0 +1,231 @@
+{
+  "engine": "original_vpsc",
+  "steps": 1900,
+  "increment": 0.0005,
+  "rate_per_s": 1,
+  "grain_sha256": "13decb1466f7f873e47c929b703a8eaf405189155a0f9099cedc8acc111e7af2",
+  "material_source": "E:\\直博一年级\\宝钛Mg合金仿真项目\\VPSC-DRX_reproduction\\final_program_with_script\\data\\original_vpsc\\Mg.sx",
+  "material_sha256": "de656692eb2e631854d5e0bed0b3fe12440b7db63aac6886b241163c850d8f4c",
+  "material": {
+    "name": "*Material: magnesium",
+    "system": "hexagonal",
+    "lattice_lengths_angstrom": [
+      1.0,
+      1.0,
+      1.624
+    ],
+    "lattice_angles_deg": [
+      90.0,
+      90.0,
+      120.0
+    ],
+    "modes": [
+      {
+        "name": "PRISMATIC <a>",
+        "systems": [
+          [
+            1,
+            0,
+            -1,
+            0,
+            -1,
+            2,
+            -1,
+            0
+          ],
+          [
+            0,
+            -1,
+            1,
+            0,
+            2,
+            -1,
+            -1,
+            0
+          ],
+          [
+            -1,
+            1,
+            0,
+            0,
+            -1,
+            -1,
+            2,
+            0
+          ]
+        ],
+        "twin": false
+      },
+      {
+        "name": "BASAL <a>",
+        "systems": [
+          [
+            0,
+            0,
+            0,
+            1,
+            2,
+            -1,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            -1,
+            2,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            -1,
+            -1,
+            2,
+            0
+          ]
+        ],
+        "twin": false
+      },
+      {
+        "name": "PYRAMIDAL<c+a>",
+        "systems": [
+          [
+            -2,
+            1,
+            1,
+            2,
+            2,
+            -1,
+            -1,
+            3
+          ],
+          [
+            1,
+            -2,
+            1,
+            2,
+            -1,
+            2,
+            -1,
+            3
+          ],
+          [
+            1,
+            1,
+            -2,
+            2,
+            -1,
+            -1,
+            2,
+            3
+          ],
+          [
+            2,
+            -1,
+            -1,
+            2,
+            -2,
+            1,
+            1,
+            3
+          ],
+          [
+            -1,
+            2,
+            -1,
+            2,
+            1,
+            -2,
+            1,
+            3
+          ],
+          [
+            -1,
+            -1,
+            2,
+            2,
+            1,
+            1,
+            -2,
+            3
+          ]
+        ],
+        "twin": false
+      },
+      {
+        "name": "TENSILE TWIN {10-12}",
+        "systems": [
+          [
+            1,
+            0,
+            -1,
+            2,
+            -1,
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            -1,
+            2,
+            0,
+            -1,
+            1,
+            1
+          ],
+          [
+            -1,
+            1,
+            0,
+            2,
+            1,
+            -1,
+            0,
+            1
+          ],
+          [
+            -1,
+            0,
+            1,
+            2,
+            1,
+            0,
+            -1,
+            1
+          ],
+          [
+            0,
+            -1,
+            1,
+            2,
+            0,
+            1,
+            -1,
+            1
+          ],
+          [
+            1,
+            -1,
+            0,
+            2,
+            -1,
+            1,
+            0,
+            1
+          ]
+        ],
+        "twin": true
+      }
+    ],
+    "hardening_law": 23,
+    "hardening_grain_size_um": 20.0
+  }
+}

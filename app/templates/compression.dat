@@ -1,0 +1,17 @@
+{steps} 3 {increment} {T} {T}
+* boundary conditions
+0 1 1
+1 0 1
+1 1 1
+*
+{half} 0 0
+0 {half} 0
+0 0 -{rate}
+*
+1 0 0
+  1 0
+    0
+*
+0 0 0
+  0 0
+    0

@@ -1,0 +1,41 @@
+{
+  "status": "complete",
+  "engine": "original_vpsc",
+  "native_executable_sha256": "0fb502347a479658d70f2d491beceaface72a21a999659bebf54d442ec7f4593",
+  "settings_sha256": "5ee550c5a88241ce5b24fc7f1c30e5c2e47acdefd205faa2658db0f7cf039d83",
+  "cases": [
+    {
+      "engine": "original_vpsc",
+      "steps": 1900,
+      "rate_per_s": 0.05,
+      "peak_stress_MPa": 466.67869417281923,
+      "final_stress_MPa": 466.67869417281923,
+      "final_DRX_fraction": 0.0,
+      "final_mean_diameter_um": null,
+      "hardening_grain_size_um": 20.0,
+      "final_density_per_m2": 112428203064325.72
+    },
+    {
+      "engine": "original_vpsc",
+      "steps": 1900,
+      "rate_per_s": 0.2,
+      "peak_stress_MPa": 466.67890136189783,
+      "final_stress_MPa": 466.67890136189783,
+      "final_DRX_fraction": 0.0,
+      "final_mean_diameter_um": null,
+      "hardening_grain_size_um": 20.0,
+      "final_density_per_m2": 112427793541700.31
+    },
+    {
+      "engine": "original_vpsc",
+      "steps": 1900,
+      "rate_per_s": 1,
+      "peak_stress_MPa": 466.7107146202454,
+      "final_stress_MPa": 466.6588126443081,
+      "final_DRX_fraction": 0.0,
+      "final_mean_diameter_um": null,
+      "hardening_grain_size_um": 20.0,
+      "final_density_per_m2": 112427752626824.22
+    }
+  ]
+}
